@@ -4,7 +4,7 @@
 }
 @font-face {
   font-family: prompt;
-  src: url(Recursos/Prompt-ExtraLight.ttf);
+  src: url(Recursos/Prompt.ttf);
 }
 html {
   scrollbar-width: none;
