@@ -1,0 +1,254 @@
+@font-face {
+  font-family: comfortaa;
+  src: url(Recursos/Comfortaa.ttf);
+}
+@font-face {
+  font-family: prompt;
+  src: url(/Recursos/Prompt-ExtraLight.ttf);
+}
+html {
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+/* Navbar */
+.btt {
+  position: fixed;
+  font-size: 30px;
+  color: #304562;
+  bottom: 0;
+  right: 0;
+  margin: 0 5px 5px 0;
+}
+.navbar {
+  background-color: #304562;
+  padding: 2rem;
+}
+.navbar-logo {
+  width: 70px;
+  border: 1px #fff solid;
+  border-radius: 50%;
+  padding: 2.5px;
+}
+.nav-link {
+  position: relative;
+  font-family: prompt;
+  font-size: 23px;
+  letter-spacing: 0.5px;
+  margin: 0 10px;
+  color: #fff;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 2.5px;
+  height: 0%;
+  left: 0;
+  bottom: 8px;
+  transition: 0.2s;
+}
+.nav-link:hover::after,
+.nav-link:focus::after,
+.nav-link:active::after {
+  height: 70%;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: #fff;
+}
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+/* Estilos */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-size: 90px;
+  color: #304562;
+  font-family: prompt;
+  font-weight: 500;
+  letter-spacing: 9px;
+}
+.seccion-oscura {
+  color: #fff;
+  background-color: #212532;
+}
+.seccion-clara {
+  color: #304562;
+  background-color: #fff;
+}
+.seccion-titulo {
+  font-family: prompt;
+  font-size: 35px;
+  padding: 15px 0;
+}
+.seccion-descripcion {
+  color: #212532;
+  font-family: prompt;
+  font-weight: 900;
+  font-size: 22px;
+}
+.seccion-texto {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 200;
+  text-align: justify;
+  font-family: comfortaa;
+}
+.texto-azul {
+  color: #304562;
+}
+.texto-blanco {
+  color: #fff;
+}
+.texto-negro {
+  color: #212532;
+}
+/* Hero */
+.hero {
+  background-color: #f5f6f7;
+  min-height: 450px;
+  text-align: center;
+}
+.camilo-garcia {
+  width: 250px;
+  border: #304562 solid 3.5px;
+  border-radius: 50%;
+}
+.hero-principal {
+  padding: 60px 0 30px 0;
+}
+.hero-principal h2 {
+  display: inline;
+  font-family: comfortaa;
+  font-size: 35px;
+  font-weight: 400;
+  padding: 3px 23px;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  color: #fff;
+  background-color: #304562;
+}
+.hero-secundario i {
+  font-size: 50px;
+  color: #304562;
+  margin: 0 10px;
+}
+/* Yo */
+.sobre-mi {
+  height: 500px;
+  padding: 10px;
+  margin-top: 40px;
+}
+.sobre-mi .contenedor {
+  max-width: 650px;
+  text-align: center;
+}
+.sobre-mi .contenedor h2 {
+  background-color: #fff;
+  border-radius: 5px;
+  color: #212532;
+  margin-bottom: 30px;
+}
+/* Logros */
+.logros {
+  padding: 40px;
+}
+.logros .row div {
+  height: 350px;
+}
+.logros i {
+  font-size: 30px;
+  color: #212532;
+  padding: 8px 19px;
+  border-bottom: #212532 2px solid;
+}
+.logros-titulo {
+  font-size: 25px;
+  font-family: prompt;
+  font-weight: 900;
+  letter-spacing: 5px;
+  margin: 10px 0;
+}
+.logros-parrafo {
+  font-family: comfortaa;
+  text-align: justify;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 18px;
+  padding-bottom: 20px;
+  border-bottom: #212532 solid 2px;
+}
+/* Proyectos */
+.ultimos-proyectos {
+  padding: 40px;
+  margin-top: 40px;
+}
+.ultimos-proyectos h2 {
+  font-size: 30px;
+  font-family: prompt;
+  font-weight: 600;
+  letter-spacing: 10px;
+  margin: 10px 0;
+}
+.ultimos-proyectos h3 {
+  text-align: center;
+  display: inline;
+  font-family: comfortaa;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 3px 23px;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  color: #fff;
+  background-color: #212532;
+}
+/* Responsive */
+@media screen and (max-width: 767px) {
+  /* Navbar  */
+  .btt {
+    font-size: 25px;
+  }
+  .nav-link:hover::after,
+  .nav-link:focus::after {
+    height: 0;
+  }
+  .nav-link:focus {
+    text-decoration: underline;
+  }
+  .navbar {
+    letter-spacing: 5px;
+  }
+  .navbar-brand {
+    display: none;
+  }
+  .navbar-toggler {
+    color: #fff;
+    background-color: #fff;
+    margin-bottom: 20px;
+  }
+  /* Estilos generales */
+  h1 {
+    font-size: 50px;
+    letter-spacing: 7px;
+  }
+  /* Hero */
+  .camilo-garcia {
+    width: 170px;
+  }
+  .hero-principal h2 {
+    font-size: 20px;
+  }
+  .hero-secundario i {
+    font-size: 30px;
+  }
+  .uno,
+  .dos {
+    margin-bottom: 120px;
+  }
+}
